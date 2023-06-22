@@ -1,0 +1,95 @@
+/* .section-container {
+  margin: 0 30px;
+} */
+@import "../css/default.css";
+.section-space {
+  margin: 0 30px;
+}
+
+.slider {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.slider .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #ccc;
+  z-index: -1;
+}
+
+#technology .item-container > li {
+  break-inside: avoid;
+}
+#technology .item-container figcaption {
+  height: 6.25rem;
+}
+/* #service */
+section[data-type="slide"] .item-container {
+  overflow: hidden;
+  position: relative;
+  height: 30vh;
+  margin: 0 -10px;
+}
+section[data-type="slide"] .item-container > li {
+  position: absolute;
+  width: 100%;
+  padding: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+#service .item-container > li a {
+  display: block;
+}
+/* #news */
+#news {
+  position: relative;
+  background: url("../images/kakao/news.png") center/cover;
+  height: 800px;
+}
+#news .txt-box {
+  position: absolute;
+  width: 80%;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+}
+/* #inquiry */
+#inquiry {
+  position: relative;
+  height: 300px;
+  background: url("../images/kakao/inquiry_main.jpg") center/cover
+    rgba(0, 0, 0, 0.5);
+}
+#inquiry::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#inquiry .txt-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+@media screen and (min-width: 800px) {
+  .section-container {
+    margin: 0 50px;
+  }
+  #technology .item-container {
+    column-count: 2;
+    column-gap: 30px;
+  }
+  section[data-type="slide"] .item-container > li {
+    width: 33.3%;
+  }
+}

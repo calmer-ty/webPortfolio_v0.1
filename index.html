@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TY-Portfolio</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header id="home">
+        <!-- nav -->
+        <nav id="nav">
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img src="./images/logo.svg" alt="" class="logo">
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="links-container">
+                    <ul class="links">
+                        <li>
+                            <a href="#home" class="scroll-link">home</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#about" class="scroll-link">about</a>
+                        </li> -->
+                        <li>
+                            <a href="#personal" class="scroll-link">personal</a>
+                        </li>
+                        <li>
+                            <a href="#cooperation" class="scroll-link">cooperation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="banner">
+            <video class="video-container" controls muted autoplay loop>
+                <source src="./videos/video.mp4" type="video/mp4">
+            </video>
+            <h1>video project</h1>
+            <!-- video switch -->
+            <button class="switch-btn">
+                <span>play</span>
+                <span>pause</span>
+                <span class="switch"></span>
+            </button>
+        </div>
+    </header>
+    <!-- about -->
+    <!-- <section class="section" id="about">
+        <div class="title">
+            <h2>about <span>us</span></h2>
+        </div>
+    </section> -->
+    <!-- personal -->
+    <section class="section carousel" id="personal">
+        <div class="container">
+            <!-- title -->
+            <div class="title">
+                <h2>personal</h2>
+                <div class="underline"></div>
+            </div>
+            <!-- view -->
+            <article class="view">
+                <div class="thumb-container">
+                    <a href="" target="_blank" class="thumb-link">
+                        <img src="./images/cgv_sample.png" class="thumb-img" alt="">
+                    </a>
+                </div>
+                <h4 class="author"></h4>
+                <p class="job"></p>
+                <p class="info"></p>
+                <!-- prev next buttons -->
+                <div class="button-container">
+                    <button class="prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <!-- random button -->
+                <button class="random-btn">random</button>
+            </article>
+        </div>
+    </section>
+    <!-- personal -->
+    <section class="section carousel" id="cooperation">
+        <div class="container">
+            <!-- title -->
+            <div class="title">
+                <h2>cooperation</h2>
+                <div class="underline"></div>
+            </div>
+            <!-- view -->
+            <article class="view">
+                <div class="thumb-container">
+                    <a href="" target="_blank" class="thumb-link">
+                        <img src="./cooperation/robot/로봇 운영_상세_다학제로봇 - 화상통화 – 3.png" class="thumb-img" alt="">
+                    </a>
+                </div>
+                <h4 class="author"></h4>
+                <p class="job"></p>
+                <p class="info"></p>
+                <!-- prev next buttons -->
+                <div class="button-container">
+                    <button class="prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <!-- random button -->
+                <button class="random-btn">random</button>
+            </article>
+        </div>
+    </section>
+    <footer class="section">
+        <p>
+            copy © Taeyeon Corp.
+            <span id="date"></span>
+            .all rights reserved
+        </p>
+    </footer>
+    <a href="#home" class="top-link">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="app.js"></script>
+</body>
+
+</html>

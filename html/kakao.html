@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kakao - 김태연</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/reset.css" />
+  <!-- <link rel="stylesheet" href="../css/font.css" /> -->
+  <link rel="stylesheet" href="../css/nav.css" />
+  <link rel="stylesheet" href="../css/default.css" />
+  <link rel="stylesheet" href="../css/kakao.css" />
+  <!-- Google Font -->
+  <!-- <link href="" rel="stylesheet" /> -->
+  <!-- 햄버거 로고 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="home">
+      <!-- nav -->
+      <nav id="nav">
+        <div class="nav-center">
+          <div class="nav-header">
+            <!-- <img src="./images/logo.svg" alt="" class="logo"> -->
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="#home" class="scroll-link">home</a>
+              </li>
+              <li>
+                <a href="#technology" class="scroll-link">technology</a>
+              </li>
+              <li>
+                <a href="#service" class="scroll-link">service</a>
+              </li>
+              <li>
+                <a href="#news" class="scroll-link">news</a>
+              </li>
+              <li>
+                <a href="#social" class="scroll-link">social</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- slider -->
+      <div class="slider">
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </header>
+    <div class="section-container">
+      <section id="technology" class="section-space">
+        <div class="title">
+          <h3>기술</h3>
+          <h4>당신의 오늘을 변화시키는 카카오 기술</h4>
+        </div>
+        <div class="content">
+          <div class="sub-title">
+            <h5>카카오의 다양한 기술 혁신</h5>
+            <h6>
+              미래를 만들어가는 카카오의 다양하고 멋진 기술과 카카오만의
+              창의성을 만나보세요.
+            </h6>
+          </div>
+          <!-- s: js-service item -->
+          <ul class="item-container"></ul>
+          <!-- e: js-service item -->
+        </div>
+      </section>
+      <section id="service" class="section-space" data-type="slide">
+        <div class="title">
+          <h3>Service</h3>
+          <h4>카카오가 제공하는 서비스입니다</h4>
+        </div>
+        <div class="content">
+          <div class="tab-btn">
+            <button>커뮤니케이션</button>
+            <button>라이프</button>
+            <button>커머스</button>
+          </div>
+          <!-- s: js-service item -->
+          <ul class="item-container"></ul>
+          <!-- e: js-service item -->
+          <div class="slide-btn">
+            <button class="prevBtn">prev</button>
+            <button class="nextBtn">next</button>
+          </div>
+        </div>
+      </section>
+      <section id="news">
+        <div class="txt-box">
+          <div class="title">
+            <h3>news</h3>
+            <p>가장 빠른 카카오 새소식 업데이트</p>
+          </div>
+          <div class="desc">
+            카카오는 카카오 구성원을 크루(Krew)라고 지칭합니다. 크루는
+            카카오(Kakao)라는 한 배를 탄 선원(Crew)이자 가보지 않은 길을 함께
+            항해하는 동료들을 상징하는 표현입니다.
+          </div>
+        </div>
+      </section>
+      <section id="social" class="section-space" data-type="slide">
+        <div class="title">
+          <h3>소셜임팩트</h3>
+        </div>
+        <div class="content">
+          <!-- s: js-service item -->
+          <ul class="item-container"></ul>
+          <!-- e: js-service item -->
+          <div class="slide-btn">
+            <button class="prevBtn">prev</button>
+            <button class="nextBtn">next</button>
+          </div>
+        </div>
+      </section>
+      <section id="inquiry">
+        <div class="txt-box">
+          <h3>
+            무엇이든 물어보세요. <br />
+            카카오가 성심성의껏 답변해드리겠습니다.
+          </h3>
+          <a href="#">문의하기</a>
+        </div>
+      </section>
+    </div>
+    <footer></footer>
+
+
+    <!-- footer -->
+    <!-- <footer>
+      <nav id="fnb">
+        <ul class="clearfix">
+          <li>
+            <h5><button>카카오</button></h5>
+            <ul class="sub-menu">
+              <li><a href="#">카카오문화</a></li>
+              <li><a href="#">공동체</a></li>
+              <li><a href="#">히스토리</a></li>
+            </ul>
+          </li>
+          <li class="small">
+            <h5><button>뉴스</button></h5>
+          </li>
+          <li>
+            <h5><button>기술과 서비스</button></h5>
+            <ul class="sub-menu">
+              <li><a href="#">기술</a></li>
+              <li><a href="#">서비스</a></li>
+            </ul>
+          </li>
+          <li>
+            <h5><button>약속과 책임</button></h5>
+            <ul class="sub-menu">
+              <li><a href="#">ESG</a></li>
+              <li><a href="#">소셜임팩트</a></li>
+              <li><a href="#">디지털 권리</a></li>
+              <li><a href="#">AI 윤리</a></li>
+            </ul>
+          </li>
+          <li>
+            <h5><button>투자정보</button></h5>
+            <ul class="sub-menu">
+              <li><a href="#">기업지배구조</a></li>
+              <li><a href="#">주가정보</a></li>
+              <li><a href="#">재무정보</a></li>
+              <li><a href="#">IR행사</a></li>
+              <li><a href="#">공시정보</a></li>
+              <li><a href="#">공고</a></li>
+            </ul>
+          </li>
+          <li>
+            <h5><button>고객센터</button></h5>
+            <ul class="sub-menu active">
+              <li><a href="#">카카오 고객센터</a></li>
+              <li><a href="#">Daum 고객센터</a></li>
+              <li><a href="#">카카오문화</a></li>
+            </ul>
+          </li>
+          <li class="small">
+            <h5><button>인재영입</button></h5>
+          </li>
+          <li class="small">
+            <h5><button>카카오계정</button></h5>
+          </li>
+        </ul>
+      </nav>
+      <div class="f-etc">
+        <ul class="clearfix">
+          <li class="small"><a href="#">이용약관</a></li>
+          <li class="large">
+            <a href="#" class="bk">위치기반서비스이용약관</a>
+          </li>
+          <li><a href="#" class="bk">개인정보처리방침</a></li>
+          <li class="small"><a href="#">운영정책</a></li>
+          <li><a href="#">청소년보호정책</a></li>
+          <li><a href="#">권리침해신고안내</a></li>
+          <li class="small"><a href="#">공지사항</a></li>
+          <li><a href="#">사이버윤리실</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="copyright">© Taeyeon Corp. All rights reserved.</div>
+    </footer> -->
+    <div class="top-link"></div>
+  </div>
+
+  <script src="../js/nav.js"></script>
+  <!-- <script src="../js/kakao.js"></script> -->
+  <script src="../js/kakao copy.js"></script>
+</body>
+
+</html>
