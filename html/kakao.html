@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>kakao - 김태연</title>
   <!-- CSS -->
-  <link rel="stylesheet" href="../css/default.css" />
+  <!-- <link rel="stylesheet" href="../css/default.css" /> -->
   <link rel="stylesheet" href="../css/kakao.css" />
   <!-- 햄버거 로고 CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 </head>
 
 <body>
@@ -20,7 +20,7 @@
       <nav id="nav">
         <div class="nav-center">
           <div class="nav-header">
-            <!-- <img src="./images/logo.svg" alt="" class="logo"> -->
+            <img src="../images/kakao/logo_brown.png" alt="" class="logo">
             <button class="nav-toggle">
               <i class="fas fa-bars"></i>
             </button>
@@ -81,18 +81,24 @@
           <h4>카카오가 제공하는 서비스입니다</h4>
         </div>
         <div class="content">
-          <div class="btn-container">
+          <div class="btn-container tab">
             <button class="tab-btn active" data-tab="communication">커뮤니케이션</button>
             <button class="tab-btn" data-tab="life">라이프</button>
             <button class="tab-btn" data-tab="commerce">커머스</button>
           </div>
+          <!-- <div class="item-container-wrap"> -->
           <!-- s: js-service item -->
           <ul class="item-container"></ul>
           <!-- e: js-service item -->
-          <div class="slide-btn">
-            <button class="prevBtn">prev</button>
-            <button class="nextBtn">next</button>
+          <div class="btn-container slide">
+            <button class="prevBtn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="nextBtn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
           </div>
+          <!-- </div> -->
         </div>
       </section>
       <!-- #news -->
@@ -117,9 +123,13 @@
           <!-- s: js-service item -->
           <ul class="item-container"></ul>
           <!-- e: js-service item -->
-          <div class="slide-btn">
-            <button class="prevBtn">prev</button>
-            <button class="nextBtn">next</button>
+          <div class="btn-container slide">
+            <button class="prevBtn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="nextBtn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
           </div>
         </div>
       </section>

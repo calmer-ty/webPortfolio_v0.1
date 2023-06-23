@@ -1,3 +1,19 @@
+const navToggle = document.querySelector(".nav-toggle");
+const linksContainer = document.querySelector(".links-container");
+const links = document.querySelector(".links");
+
+navToggle.addEventListener("click", function () {
+  const containerHeight = linksContainer.getBoundingClientRect().height;
+  const linksHeight = links.getBoundingClientRect().height;
+
+  if (containerHeight === 0) {
+    linksContainer.style.height = `${linksHeight}px`;
+  } else {
+    linksContainer.style.height = 0;
+  }
+});
+
+// ********** fixed navbar ************
 const navbar = document.getElementById("nav");
 const topLink = document.querySelector(".top-link");
 
@@ -18,20 +34,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-const navToggle = document.querySelector(".nav-toggle");
-const linksContainer = document.querySelector(".links-container");
-const links = document.querySelector(".links");
-
-navToggle.addEventListener("click", function () {
-  const containerHeight = linksContainer.getBoundingClientRect().height;
-  const linksHeight = links.getBoundingClientRect().height;
-
-  if (containerHeight === 0) {
-    linksContainer.style.height = `${linksHeight}px`;
-  } else {
-    linksContainer.style.height = 0;
-  }
-});
+// ********** smooth scroll ************
 const scrollLinks = document.querySelectorAll(".scroll-link");
 scrollLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
@@ -45,12 +48,12 @@ scrollLinks.forEach(function (link) {
     const containerHeight = linksContainer.getBoundingClientRect().height;
     const fixedNav = navbar.classList.contains("fixed-nav");
     let position = element.offsetTop - navHeight;
-    console.log(element.offsetTop);
 
     if (!fixedNav) {
       position = position - navHeight;
+      console.log("!fix" + position - navHeight);
     }
-    if (navHeight) {
+    if (navHeight > 82) {
       position = position + containerHeight;
     }
     window.scrollTo({

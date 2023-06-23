@@ -255,18 +255,45 @@ itemSlider(sectionSocial);
 
 // tab selector
 const tabBtns = sectionService.querySelectorAll(".tab-btn");
+const content = sectionService.querySelector(".content");
 tabBtns.forEach(function (btn) {
-  btn.addEventListener("click", function (e) {
-    e.target.classList.add("active");
+  content.addEventListener("click", function (e) {
     if (e.target.dataset.tab === "communication") {
+      btn.classList.remove("active");
+      e.target.classList.add("active");
       displayItems(sectionService, arrCommunication);
       itemPosition(sectionService);
     } else if (e.target.dataset.tab === "life") {
+      btn.classList.remove("active");
+      e.target.classList.add("active");
       displayItems(sectionService, arrLife);
       itemPosition(sectionService);
     } else if (e.target.dataset.tab === "commerce") {
+      btn.classList.remove("active");
+      e.target.classList.add("active");
       displayItems(sectionService, arrCommerce);
       itemPosition(sectionService);
     }
   });
 });
+
+// const btns = document.querySelectorAll(".tab-btn");
+// const about = document.querySelector(".about");
+// const articles = document.querySelectorAll(".content");
+
+// about.addEventListener("click", function (e) {
+//   const id = e.target.dataset.id;
+//   if (id) {
+//     // remove active form other buttons
+//     btns.forEach(function (btn) {
+//       btn.classList.remove("active");
+//       e.target.classList.add("active");
+//     });
+//     // hide other article
+//     articles.forEach(function (article) {
+//       article.classList.remove("active");
+//     });
+//     const element = document.getElementById(id);
+//     element.classList.add("active");
+//   }
+// });
