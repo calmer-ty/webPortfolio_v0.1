@@ -1,3 +1,7 @@
+@import "./reset.css";
+@import "./nav.css";
+@import "./fonts.css";
+
 /*
 =============== 
 Global Styles
@@ -22,7 +26,7 @@ a {
 img:not(.logo) {
   width: 100%;
 }
-h1,
+/* h1,
 h2,
 h3,
 h4 {
@@ -30,8 +34,8 @@ h4 {
   line-height: 1.25;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
-}
-h1 {
+} */
+/* h1 {
   font-size: 3rem;
 }
 h2 {
@@ -68,7 +72,7 @@ p {
   h4 {
     line-height: 1;
   }
-}
+} */
 /*
 =============== 
 Variables

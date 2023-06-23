@@ -7,13 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>kakao - 김태연</title>
   <!-- CSS -->
-  <link rel="stylesheet" href="../css/reset.css" />
-  <!-- <link rel="stylesheet" href="../css/font.css" /> -->
-  <link rel="stylesheet" href="../css/nav.css" />
   <link rel="stylesheet" href="../css/default.css" />
   <link rel="stylesheet" href="../css/kakao.css" />
-  <!-- Google Font -->
-  <!-- <link href="" rel="stylesheet" /> -->
   <!-- 햄버거 로고 CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
@@ -58,34 +53,38 @@
       </div>
     </header>
     <div class="section-container">
-      <section id="technology" class="section-space">
+      <!-- #technology -->
+      <section id="technology">
         <div class="title">
           <h3>기술</h3>
           <h4>당신의 오늘을 변화시키는 카카오 기술</h4>
         </div>
         <div class="content">
-          <div class="sub-title">
-            <h5>카카오의 다양한 기술 혁신</h5>
-            <h6>
-              미래를 만들어가는 카카오의 다양하고 멋진 기술과 카카오만의
-              창의성을 만나보세요.
-            </h6>
+          <div class="txt-box">
+            <div class="sub-title">
+              <h5>카카오의 다양한 기술 혁신</h5>
+              <p>
+                미래를 만들어가는 카카오의 다양하고 멋진 기술과 카카오만의
+                창의성을 만나보세요.
+              </p>
+            </div>
           </div>
           <!-- s: js-service item -->
-          <ul class="item-container"></ul>
+          <ul class="item-container m-bw30 slide"></ul>
           <!-- e: js-service item -->
         </div>
       </section>
+      <!-- #service -->
       <section id="service" class="section-space" data-type="slide">
         <div class="title">
           <h3>Service</h3>
           <h4>카카오가 제공하는 서비스입니다</h4>
         </div>
         <div class="content">
-          <div class="tab-btn">
-            <button>커뮤니케이션</button>
-            <button>라이프</button>
-            <button>커머스</button>
+          <div class="btn-container">
+            <button class="tab-btn active" data-tab="communication">커뮤니케이션</button>
+            <button class="tab-btn" data-tab="life">라이프</button>
+            <button class="tab-btn" data-tab="commerce">커머스</button>
           </div>
           <!-- s: js-service item -->
           <ul class="item-container"></ul>
@@ -96,6 +95,7 @@
           </div>
         </div>
       </section>
+      <!-- #news -->
       <section id="news">
         <div class="txt-box">
           <div class="title">
@@ -133,7 +133,64 @@
         </div>
       </section>
     </div>
-    <footer></footer>
+    <footer>
+      <nav id="fnb">
+        <ul class="fnb-menu">
+          <li>
+            <a href="#" class="title">카카오</a>
+            <ul class="sub-menu">
+              <li><a href="#">카카오문화</a></li>
+              <li><a href="#">공동체</a></li>
+              <li><a href="#">히스토리</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="title">뉴스</a>
+          </li>
+          <li>
+            <a href="#" class="title">기술과 서비스</a>
+            <ul class="sub-menu">
+              <li><a href="#">기술</a></li>
+              <li><a href="#">서비스</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="title">약속과 책임</a>
+            <ul class="sub-menu">
+              <li><a href="#">ESG</a></li>
+              <li><a href="#">소셜임팩트</a></li>
+              <li><a href="#">디지털 권리</a></li>
+              <li><a href="#">AI 윤리</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="title">투자정보</a>
+            <ul class="sub-menu">
+              <li><a href="#">기업지배구조</a></li>
+              <li><a href="#">주가정보</a></li>
+              <li><a href="#">재무정보</a></li>
+              <li><a href="#">IR행사</a></li>
+              <li><a href="#">공시정보</a></li>
+              <li><a href="#">공고</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="title">고객센터</a>
+            <ul class="sub-menu">
+              <li><a href="#">카카오 고객센터</a></li>
+              <li><a href="#">Daum 고객센터</a></li>
+              <li><a href="#">카카오문화</a></li>
+            </ul>
+          </li>
+          <li class="small">
+            <a href="#" class="title">인재영입</a>
+          </li>
+          <li class="small">
+            <a href="#" class="title">카카오계정</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
 
 
     <!-- footer -->
@@ -215,8 +272,7 @@
   </div>
 
   <script src="../js/nav.js"></script>
-  <!-- <script src="../js/kakao.js"></script> -->
-  <script src="../js/kakao copy.js"></script>
+  <script src="../js/kakao.js"></script>
 </body>
 
 </html>
