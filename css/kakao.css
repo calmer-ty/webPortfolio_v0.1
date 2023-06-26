@@ -1,24 +1,28 @@
 @import "./default.css";
+/* .links {
+  margin-top: 2rem;
+} */
 body {
   font-family: "Noto Sans KR", sans-serif;
 }
-
-.slider {
+.main-slider {
+  /* position: relative; */
   display: flex;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.slider .item {
+.main-slider .item {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  background-color: #ccc;
-  z-index: -1;
+  /* z-index: -1; */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 /* COMMON STYLE */
 section[data-type="slide"] .item-container {
@@ -38,7 +42,7 @@ section > .title {
   margin: 0 1.5rem;
 }
 section > .title h3 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 section > .title h3 + h4 {
@@ -69,18 +73,25 @@ section > .title h4 {
   font-size: 1rem;
   line-height: 1.5;
 }
-.content {
+.slide-container {
   position: relative;
 }
 .btn-container.slide {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  top: 37%;
+  top: 27%;
   left: 2rem;
   right: 2rem;
 }
 .btn-container.slide button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
   font-size: 2rem;
   color: var(--clr-secondary);
 }
@@ -155,7 +166,7 @@ section > .title h4 {
   margin-bottom: 1.25rem;
 }
 #news .txt-box h3 {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 #news .txt-box p {
@@ -225,7 +236,12 @@ section > .title h4 {
 .fnb-menu .sub-menu li:hover a {
   color: #555;
 }
+
 @media screen and (min-width: 800px) {
+  html,
+  body {
+    font-size: 16px;
+  }
   #technology .item-container {
     column-count: 2;
     column-gap: 30px;
@@ -242,5 +258,11 @@ section > .title h4 {
   }
   .fnb-menu > li + li {
     border-top: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  html,
+  body {
+    font-size: 20px;
   }
 }

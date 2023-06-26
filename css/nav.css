@@ -3,6 +3,8 @@ header {
 }
 /* nav */
 nav {
+  position: relative;
+  z-index: 10;
   background-color: var(--clr-white);
   padding: 1rem 1.5rem;
 }

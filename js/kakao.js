@@ -2,7 +2,7 @@ const sectionTechnology = document.getElementById("technology");
 const sectionService = document.getElementById("service");
 const sectionSocial = document.getElementById("social");
 // item arr
-const arrTechnology = [
+const arrTech = [
   {
     id: 1,
     title: "오픈소스를 요리하다, Olive Platform",
@@ -28,118 +28,118 @@ const arrTechnology = [
     text: "개발자들이 각자의 방식으로 카카오 서비스와 연계하여 더 나은 세상을 꿈꾸고, 창조하고, 공유할 수 있도록 다양한 오픈 API와 개발 도구를 지원합니다.",
   },
 ];
-const arrCommunication = [
+const arrService01 = [
   {
     id: 1,
-    title: "나를 가장 잘 표현하는 곳, 티스토리",
-    img: "../images/kakao/communication_item_1.jpg",
-    text: "블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해보세요.",
+    title: "사람과 세상을 향한 모든 연결의 시작, 카카오톡",
+    img: "../images/kakao/kakao_item_1.jpg",
+    text: "사람과 세상, 그 이상을 연결하는 카카오톡 전 우주 통신규약을 꿈꾸는 대표 메신저 언제 어디서나 간편하게 실시간 무료로 즐겨보세요.",
   },
   {
     id: 2,
-    title: "나를 위한 다음앱",
-    img: "../images/kakao/communication_item_2.jpg",
-    text: "실시간 맞춤 뉴스, 다양한 관심사 콘텐츠, 영상을 보며 웹서핑도 즐기는 플레이어까지 스마트한 모바일 라이프를 즐겨보세요.",
+    title: "더 편한 모바일 생활의 시작, 카카오톡 채널",
+    img: "../images/kakao/kakao_item_2.jpg",
+    text: "친구에게만 제공되는 정보와 혜택은 물론 간편한 가입부터 주문, 결제, 예약, 상담까지 필요한 모든 것을 카카오톡 채널 하나로 해결하세요.",
   },
   {
     id: 3,
-    title: "글이 작품이 되는 공간, 브런치",
-    img: "../images/kakao/communication_item_3.jpg",
-    text: "좋은 글을 쓰고 싶은 모든 이들을 위해 준비했습니다. 글이 작품이 되는 공간, 브런치를 만나 보세요.",
+    title: "우리들의 새로운 언어, 카카오 이모티콘!",
+    img: "../images/kakao/kakao_item_3.jpg",
+    text: "우리들의 새로운 언어, 이모티콘! 글자만으로는 내 감정을 표현하기 어려운 순간들. 고민하지 말고 이모티콘을 이용해보세요!",
   },
   {
     id: 4,
-    title: "나의 이야기가 빛나는 공간, 카카오스토리",
-    img: "../images/kakao/communication_item_4.jpg",
-    text: "나의 일상은 가볍게 기록하고 알고 싶은 소식은 한 번에 받아보세요.",
+    title: "초간단 음식주문, 카카오톡 주문하기",
+    img: "../images/kakao/kakao_item_4.jpg",
+    text: "홈파티부터 티타임까지, 이제 카카오톡 하나로 쉽고 편하게 주문하세요.",
   },
   {
     id: 5,
-    title: "모든 이야기의 시작, Daum 카페",
-    img: "../images/kakao/communication_item_5.jpg",
-    text: "지금, 우리들의 이야기가 궁금하다면 Daum 카페와 함께 하세요.",
+    title: "일상을 더 쉽고 편리하게, 카카오톡 지갑",
+    img: "../images/kakao/kakao_item_5.jpg",
+    text: "나의 디지털 자산과 아이템이 담긴, 카톡 지갑에서 더 쉽고 편리한 일상을 누려보세요.",
   },
   {
     id: 6,
-    title: "함께 만드는 더 좋은 세상, 카카오같이가치",
-    img: "../images/kakao/communication_item_6.jpg",
-    text: "누구나 공익프로젝트를 제안하고 참여할 수 있는 같이기부, 더 좋은 세상을 꿈꾼다면 지금 함께해요.",
+    title: "카카오톡의 편리함을 더한 메일, 카카오메일",
+    img: "../images/kakao/kakao_item_6.jpg",
+    text: "나의 워너비 메일주소로 카카오톡에서 빠르고 편리하게 메일 서비스를 이용해보세요.",
   },
 ];
-const arrLife = [
+const arrService02 = [
   {
     id: 1,
-    title: "life",
-    img: "../images/kakao/communication_item_1.jpg",
-    text: "블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해보세요.",
-  },
-  {
-    id: 2,
-    title: "life",
-    img: "../images/kakao/communication_item_2.jpg",
-    text: "실시간 맞춤 뉴스, 다양한 관심사 콘텐츠, 영상을 보며 웹서핑도 즐기는 플레이어까지 스마트한 모바일 라이프를 즐겨보세요.",
-  },
-  {
-    id: 3,
-    title: "life",
-    img: "../images/kakao/communication_item_3.jpg",
-    text: "좋은 글을 쓰고 싶은 모든 이들을 위해 준비했습니다. 글이 작품이 되는 공간, 브런치를 만나 보세요.",
-  },
-  {
-    id: 4,
-    title: "나를 가장 잘 표현하는 곳, 티스토리",
+    title: "정확하고 즐거운 운전 도우미, 카카오내비",
     img: "../images/kakao/life_item_1.jpg",
-    text: "블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해 보세요.",
-  },
-  {
-    id: 5,
-    title: "life",
-    img: "./images/cgv_sample.png",
-    text: "CGV 사이트를 클론하여 웹 작업하였습니다.",
-  },
-  {
-    id: 6,
-    title: "life",
-    img: "./images/cgv_sample.png",
-    text: "CGV 사이트를 클론하여 웹 작업하였습니다.",
-  },
-];
-const arrCommerce = [
-  {
-    id: 1,
-    title: "commerce",
-    img: "../images/kakao/communication_item_1.jpg",
-    text: "블로그, 포트폴리오, 웹사이트까지 티스토리에서 나를 표현해보세요.",
+    text: "빠르고 정확한 길 안내와 즐거운 운전 도우미가 함께한다면, 지루했던 운전경험이 일상의 즐거움으로 바뀔 수 있습니다. 운전자에게 필요한 모든 차량 관리 서비스도 같이 이용해보세요!",
   },
   {
     id: 2,
-    title: "commerce",
-    img: "../images/kakao/communication_item_2.jpg",
-    text: "실시간 맞춤 뉴스, 다양한 관심사 콘텐츠, 영상을 보며 웹서핑도 즐기는 플레이어까지 스마트한 모바일 라이프를 즐겨보세요.",
+    title: "말 한마디로 편리해지는 일상, 헤이카카오",
+    img: "../images/kakao/life_item_2.jpg",
+    text: "당신에게 딱 맞게, 일상을 편리하게, 라이프 어시스턴트 기능을 사용해보세요.",
   },
   {
     id: 3,
-    title: "commerce",
-    img: "../images/kakao/communication_item_3.jpg",
-    text: "좋은 글을 쓰고 싶은 모든 이들을 위해 준비했습니다. 글이 작품이 되는 공간, 브런치를 만나 보세요.",
+    title: "같지만 다른 은행, 카카오뱅크",
+    img: "../images/kakao/life_item_3.jpg",
+    text: "혁신적 기술을 통해 일상 속 어떤 순간에서도 유용한 은행. 카카오뱅크는 또 하나의 은행이 아닌 '은행의 새로운 시작'입니다.",
   },
   {
     id: 4,
-    title: "commerce",
-    img: "./images/cgv_sample.png",
-    text: "CGV 사이트를 클론하여 웹 작업하였습니다.",
+    title: "마음놓고 금융하다, 카카오페이",
+    img: "../images/kakao/life_item_4.jpg",
+    text: "금융의 수고로움을 줄이고 생활에 이로운 흐름을 만듭니다.",
   },
   {
     id: 5,
-    title: "commerce",
-    img: "./images/cgv_sample.png",
-    text: "CGV 사이트를 클론하여 웹 작업하였습니다.",
+    title: "나를 가꾸는 참 쉬운 방법, 카카오헤어샵",
+    img: "../images/kakao/life_item_5.jpg",
+    text: "헤어샵 예약부터 뷰티콘텐츠까지 all-in-one 뷰티플랫폼 카카오헤어샵",
   },
   {
     id: 6,
-    title: "commerce",
-    img: "./images/cgv_sample.png",
-    text: "CGV 사이트를 클론하여 웹 작업하였습니다.",
+    title: "모든 이동을 위한, 카카오 T",
+    img: "../images/kakao/life_item_6.jpg",
+    text: "답답한 이동 시간이 짧아진다면, 당신의 소중한 시간은 더 길어지고, 생활 속 이동의 불편함이 줄어든다면 당신이 할 수 있는 일이 더 많아집니다.",
+  },
+];
+const arrService03 = [
+  {
+    id: 1,
+    title: "나를 표현하는 쇼핑, 지그재그",
+    img: "../images/kakao/commerce_item_1.jpg",
+    text: "개인화 추천으로 나만의 스타일을 발견하는 쇼핑. 지그재그와 함께 내 맘대로 사세요.",
+  },
+  {
+    id: 2,
+    title: "마음을 전하는 가장 쉬운 방법, 카카오톡 선물하기",
+    img: "../images/kakao/commerce_item_2.jpg",
+    text: "메시지를 보내듯 편하게 주고 받는 선물을 통해 소중한 사람과의 관계가 더욱 특별해집니다.",
+  },
+  {
+    id: 3,
+    title: "여러분의 참여로 완성되는 카카오쇼핑라이브",
+    img: "../images/kakao/commerce_item_3.jpg",
+    text: "쇼핑에 필요한 모든 것을 전문가의 시선으로 리뷰하고, 고객의 관점으로 풀어드리는 친절한 라이브커머스, 카카오쇼핑라이브를 만나보세요",
+  },
+  {
+    id: 4,
+    title: "현명한 쇼핑 생활의 시작, 쇼핑하우",
+    img: "../images/kakao/commerce_item_4.jpg",
+    text: "스마트한 가격 비교 통해 탐색에서 구매까지 결정을 도와주는 쇼핑 중개 서비스",
+  },
+  {
+    id: 5,
+    title: "더 나은 내일을 만드는 주문, 카카오메이커스",
+    img: "../images/kakao/commerce_item_5.jpg",
+    text: "제품 하나하나의 임팩트로 오늘보다 나은 내일을 만듭니다.",
+  },
+  {
+    id: 6,
+    title: "쇼핑을 톡하다! 카카오톡 쇼핑하기",
+    img: "../images/kakao/commerce_item_6.jpg",
+    text: "카카오톡 스토어 판매자의 다양한 상품을 특별한 혜택과 함께 만나보세요.",
   },
 ];
 const arrSocial = [
@@ -180,15 +180,41 @@ const arrSocial = [
     text: "먼저 기부하고, 실천하며 세상과 함께 하는 방법을 고민합니다.",
   },
 ];
+const arrSlide = [
+  {
+    id: 1,
+    img: "../images/kakao/slide_item_1.png",
+  },
+  {
+    id: 2,
+    img: "../images/kakao/slide_item_2.png",
+  },
+  // {
+  //   id: 3,
+  //   img: "../images/kakao/slide_item_3.png",
+  // },
+];
+
 // load items
 window.addEventListener("DOMContentLoaded", function () {
-  displayItems(sectionTechnology, arrTechnology);
-  displayItems(sectionService, arrCommunication);
+  displaySlider(arrSlide);
+  displayItems(sectionTechnology, arrTech);
+  displayItems(sectionService, arrService01);
   displayItems(sectionSocial, arrSocial);
   itemPosition(sectionService);
   itemPosition(sectionSocial);
   // displayMenuButtons();
 });
+function displaySlider(items) {
+  const mainSlider = document.querySelector(".main-slider");
+  let sliderItems = items.map(function (item) {
+    return `    
+        <div class="item"  style="background-image: url(${item.img});"> </div> 
+    `;
+  });
+  sliderItems = sliderItems.join("");
+  mainSlider.innerHTML = sliderItems;
+}
 function displayItems(section, items) {
   const itemContainer = section.querySelector(".item-container");
   let displayMenu = items.map(function (item) {
@@ -205,6 +231,26 @@ function displayItems(section, items) {
   displayMenu = displayMenu.join("");
   itemContainer.innerHTML = displayMenu;
 }
+function mainSlide() {
+  let slideCount = 0;
+
+  function slideShow() {
+    const slide = document.querySelectorAll(".main-slider .item");
+    for (let i = 0; i < slide.length; i++) {
+      slide[i].style.opacity = "0"; //처음에 전부 display를 none으로 한다.
+    }
+    slideCount++;
+    if (slideCount >= slide.length) {
+      slideCount = 0; //인덱스가 초과되면 1로 변경
+    }
+    slide[slideCount].style.opacity = "1"; //해당 인덱스는 block으로
+    setTimeout(slideShow, 5000); //함수를 4초마다 호출
+  }
+  window.onload = function () {
+    slideShow();
+  };
+}
+mainSlide();
 // item 위치값 변경
 function itemPosition(section) {
   const itemList = section.querySelectorAll(".item-container li");
@@ -261,17 +307,17 @@ tabBtns.forEach(function (btn) {
     if (e.target.dataset.tab === "communication") {
       btn.classList.remove("active");
       e.target.classList.add("active");
-      displayItems(sectionService, arrCommunication);
+      displayItems(sectionService, arrService01);
       itemPosition(sectionService);
     } else if (e.target.dataset.tab === "life") {
       btn.classList.remove("active");
       e.target.classList.add("active");
-      displayItems(sectionService, arrLife);
+      displayItems(sectionService, arrService02);
       itemPosition(sectionService);
     } else if (e.target.dataset.tab === "commerce") {
       btn.classList.remove("active");
       e.target.classList.add("active");
-      displayItems(sectionService, arrCommerce);
+      displayItems(sectionService, arrService03);
       itemPosition(sectionService);
     }
   });
