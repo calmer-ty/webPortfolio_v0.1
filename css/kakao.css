@@ -70,7 +70,7 @@ section > .title h4 {
   line-height: 1.4;
 }
 .item-container p {
-  height: 5rem;
+  /* height: 5rem; */
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -89,8 +89,8 @@ section > .title h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   font-size: 2rem;
@@ -154,7 +154,7 @@ section > .title h4 {
 #news {
   position: relative;
   background: url("../images/kakao/news.png") center/cover;
-  height: 800px;
+  height: 600px;
 }
 #news .txt-box {
   position: absolute;
@@ -239,8 +239,16 @@ section > .title h4 {
   color: #555;
 }
 
-/* @media screen and (min-width: 480px) {
-} */
+@media screen and (min-width: 480px) {
+  .btn-container.slide button {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.75rem;
+  }
+  #news {
+    height: 800px;
+  }
+}
 @media screen and (min-width: 800px) {
   html,
   body {
