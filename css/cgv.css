@@ -285,12 +285,14 @@
 }
 
 .cont2.notice .inner {
+  display: flex;
   height: 230px;
 }
 .cont2.notice .inner > [class^="cont"] {
   height: 100%;
 }
 .cont2.notice .cont-left {
+  display: flex;
   float: left;
   border: 1px solid #eee;
   border-radius: 10px;

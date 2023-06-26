@@ -1,0 +1,191 @@
+/* GOOGLE ICON */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/* Noto Sans */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+/* COURGETTE */
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+.courgette {
+  font-family: "Courgette", cursive;
+}
+header {
+  min-height: initial;
+}
+
+/* common */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* FLOAT */
+.float-L {
+  float: left;
+}
+.float-R {
+  float: right;
+}
+.clear-B {
+  clear: both;
+}
+
+.position-R {
+  position: relative;
+}
+.position-A {
+  position: absolute;
+}
+
+/* WIDTH / HEIGHT */
+.w100p {
+  width: 100%;
+}
+.h100p {
+  height: 100%;
+}
+.wh100p {
+  width: 100%;
+  height: 100%;
+}
+/* MARGIN */
+.m40 {
+  margin: 40px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.mlr20 {
+  margin: 0 20px;
+}
+.ml100 {
+  margin-left: 100px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.mt5 {
+  margin-top: 5px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt100 {
+  margin-top: 100px;
+}
+.mt150 {
+  margin-top: 150px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.mb50 {
+  margin-bottom: 50px;
+}
+.mb100 {
+  margin-bottom: 100px;
+}
+.mb150 {
+  margin-bottom: 150px;
+}
+.mb300 {
+  margin-bottom: 300px;
+}
+
+/* PADDING */
+.plr20 {
+  padding: 0 20px;
+}
+.plr100 {
+  padding: 0 100px;
+}
+.pl20 {
+  padding-left: 20px;
+}
+.pl100 {
+  padding-left: 100px;
+}
+.pr5 {
+  padding-right: 5px;
+}
+.pr20 {
+  padding-right: 20px;
+}
+.ptb40 {
+  padding: 40px 0;
+}
+
+/* TEXT */
+.t-align-L {
+  text-align: left;
+}
+.t-align-C {
+  text-align: center;
+}
+.t-align-R {
+  text-align: right;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.italic {
+  font-style: italic;
+}
+.fs20 {
+  font-size: 20px;
+}
+.fw-b {
+  font-weight: bold;
+}
+
+/* BUTTON STYLE */
+label.btn {
+  display: inline-block;
+}
+label button {
+  border: 0;
+  background-color: initial;
+}
+.btn-move button {
+  cursor: pointer;
+}
+
+/* CONT LIST-ITEM STYLE */
+.cont .list-item .slide {
+  position: absolute;
+  display: flex;
+  transition: transform 0.5s;
+}
+.cont .list-item .slide li {
+  float: left;
+  margin-right: 30px;
+  box-sizing: border-box;
+}
+.cont .list-item .slide li:last-of-type {
+  margin-right: 0;
+}
+.cont .list-item a {
+  display: block;
+  position: relative;
+}
+.cont .list-item a .thumb-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.x.mt-scroll-snap {
+  scroll-snap-type: x mandatory;
+}
+.y.mt-scroll-snap {
+  scroll-snap-type: y mandatory;
+}
