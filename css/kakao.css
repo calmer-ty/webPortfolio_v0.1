@@ -70,7 +70,7 @@ section > .title h4 {
   line-height: 1.4;
 }
 .item-container p {
-  /* height: 5rem; */
+  height: 5rem;
   font-size: 1rem;
   line-height: 1.5;
 }
