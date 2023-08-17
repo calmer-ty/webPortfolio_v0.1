@@ -1,0 +1,36 @@
+body {
+  background-color: #f5f5f7;
+}
+
+#nav {
+  display: flex;
+  height: 48px;
+  background-color: #f5f5f7;
+}
+#nav .menu-list {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+#nav > a.link {
+  display: block;
+}
+
+/* shop-guide-container */
+.shop-guide-container {
+  display: flex;
+  justify-content: space-between;
+}
+.shop-guide-container .title-box {
+  width: 50%;
+  font-size: 48px;
+  font-weight: 600;
+}
+.shop-guide-container .title-box p {
+  color: #6e6e73;
+}
+.shop-guide-container .title-box span {
+  color: #1d1d1f;
+}
+
+/*# sourceMappingURL=apple.css.map */
