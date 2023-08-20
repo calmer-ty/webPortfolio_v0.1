@@ -1,5 +1,6 @@
 body {
   background-color: #f5f5f7;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 /* NAV */
@@ -26,17 +27,57 @@ body {
 .shop-guide-container {
   display: flex;
   justify-content: space-between;
+  max-width: 1024px;
+  padding: 50px 0;
+  margin: 0 auto;
 }
 .shop-guide-container .title-box {
   width: 50%;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.2rem;
 }
 .shop-guide-container .title-box p {
   color: #6e6e73;
 }
 .shop-guide-container .title-box span {
   color: #1d1d1f;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=apple.css.map */
+.product-list-container {
+  box-sizing: border-box;
+  border: 3px solid red;
+}
+.product-list-container ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.product-list-container li {
+  min-width: 136px;
+  height: 148px;
+  padding: 18px 8px 16px;
+  box-sizing: border-box;
+}
+.product-list-container .product-image {
+  width: 120px;
+  height: 78px;
+  background-color: red;
+}
+
+/* cards-container */
+.cards-container .cards-scroller ul {
+  display: flex;
+}
+.cards-container .cards-scroller li {
+  width: 400px;
+  height: 500px;
+  background-color: red;
+}
+.cards-container .cards-scroller li + li {
+  margin-left: 20px;
+}
